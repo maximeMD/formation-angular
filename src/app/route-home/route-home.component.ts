@@ -9,9 +9,9 @@ import { IndividualService } from '../individual.service';
 })
 export class RouteHomeComponent implements OnInit {
 
-  @Input() individuals: Individual[];
-  @Input() editIndividual: Individual;
-
+  public editIndividual: Individual;
+  
+  public individuals: Individual[];
   public editState: string;
 
   constructor(
