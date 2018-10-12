@@ -1,0 +1,14 @@
+<div class="card" style="width: 18rem;">
+  <img class="card-img-top" src="./assets/contact.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">{{individual.lastName}} {{individual.firstName}}</h5>
+    <p class="card-text">{{individual.address}}</p>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <!-- Button trigger modal -->
+      <button (click)="edit(individual.id)" type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal">
+        Edit
+      </button>
+      <button (click)="delete(individual.id)" class="btn btn-danger">Delete</button>
+    </div>
+  </div>
+</div>
