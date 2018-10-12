@@ -31,18 +31,4 @@ export class AppComponent {
     });
   }
 
-  individualRemoveEvent(){
-    this.getAllIndividuals();
-  }
-
-  individualEditEvent(event){
-    this.editIndividual = event;
-  }
-
-  onSubmitEdit(){
-    let individualEditQuery = this.individualService.updateIndividual(this.editIndividual).subscribe( res => {
-      this.getAllIndividuals();
-      this.editState = "Saved !"
-    });
-  }
 }
